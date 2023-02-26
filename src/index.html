@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8"/>
+    <title>UE BIM 2023 – 3D Photomesh and IFC viewer</title>
+    <meta name="description" content="A partnership research project of UZUFLY and EPFL ENAC/CNPA">
+    <meta name="author" content="Uzufly sàrl">
+    <meta name="keywords" content="cesium, ifc, bim, photomesh, import, 3d, tiles, pav, praille, acacias, vernets, geneva">
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="shortcut icon" type="image/png" href="assets/img/01uzufly_logo_sigle.png?height=32">
+    <link rel="shortcut icon" sizes="64x64" href="assets/img/01uzufly_logo_sigle.png?height=64">
+    <link rel="shortcut icon" sizes="192x192" href="assets/img/01uzufly_logo_sigle.png?height=192">
+    <link rel="apple-touch-icon" href="assets/img/01uzufly_logo_sigle.png?height=192">
+  </head>
+  <body>
+    <header class="glassy">
+      <a id="epfl" href="https://www.epfl.ch/fr/">
+        <img id="logo-epfl" height="28"
+          src="assets/img/epfl-logo.svg"
+          alt="Logo EPFL, École polytechnique fédérale de Lausanne" />
+      </a>
+      <a id="enac" href="https://www.epfl.ch/schools/enac/fr/">
+        <img id="logo-enac" height="50"
+          src="assets/img/EPFL_Unites_ENAC.png"
+          alt="Logo ENAC, Faculté de l’environnement naturel, architectural et construit" />
+      </a>
+      <a id="cnpa" href="https://www.epfl.ch/labs/cnpa/fr/">
+        <img id="logo-cnpa" height="50"
+          src="assets/img/EPFL_Unites_CNPA.png"
+          alt="Logo CNPA, Laboratoire des cultures numériques du projet architectural" />
+      </a>
+      <h1 id="title" title="A partnership research project of UZUFLY and EPFL ENAC/CNPA">UE BIM 2023</h1>
+    </header>
+    <main>
+      <cesium-ifc-viewer
+        cesium-base-url="static/" ifc-base-url="../../static/"
+        ion-access-token="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiI5Yjk5NGFkNi01ODM2LTRjZmMtODVjZS05ZGY2YTQ2Zjk2NGMiLCJpZCI6MzIzMDIsImlhdCI6MTY3ODExNDM1Nn0.WwZX9paasNbFvTo9U3KPZvJEEk1iDe3thjEPtg6nTJ0"
+        model-origin="[ 6.137499506, 46.192506022, 425.999 ]"
+        model-orientation="[ 90, 0, 0 ]"
+        clamp-to-ground>
+        <p class="no-space"><em>Drag & drop</em> an <strong>IFC file</strong> on this canvas.</p>
+      </cesium-ifc-viewer>
+    </main>
+    <footer class="glassy">
+      <div id="author">
+        <a href="https://uzufly.com/" title="Crafted by Uzufly">
+          <img id="logo-uzufly" height="24" alt="Uzufly"
+               src="assets/img/03uzufly_logo_horizontal.png?height=24"></a></div>
+      <div id="project">
+        <a href="https://github.com/uzufly/ifc-cesium-showcase"
+           title="Source code on GitHub">
+          <img id="logo-github" height="20" alt="GitHub"
+               src="assets/img/github-mark.svg">
+          Source code</a></div>
+      <div id="credits">
+        <a href="#">Data attribution</a></div>
+    </footer>
+    <script type="module">
+      import '@uzufly/cesium-ifc-viewer';
+    </script>
+  </body>
+</html>

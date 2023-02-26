@@ -1,3 +1,13 @@
 # OS generated files
 .DS_Store
 Thumbs.db
+
+# Parcel generated folders
+.parcel-cache/
+dist/
+
+# NPM local folder
+node_modules/
+
+# Netlify local folder
+.netlify

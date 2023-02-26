@@ -1,0 +1,107 @@
+{
+  "name": "@uzufly/ifc-cesium-showcase",
+  "version": "0.2.0",
+  "description": "Showcase of the import and viewing of an IFC BIM model within a Cesium 3D photorealistic environment – with a photomesh of ‹Caserne des Vernets› construction site in Geneva, Switzerland.",
+  "source": "src/index.html",
+  "author": "Uzufly sàrl (https://github.com/uzufly)",
+  "license": "Apache-2.0",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://npm.pkg.github.com"
+  },
+  "contributors": [
+    "Olivier Lange (https://github.com/olange)",
+    "Romain Kirchhoff (https://github.com/uzuro)",
+    "Théo Gerritsen (https://github.com/theogerritsen)",
+    "Théo Benazzi (https://github.com/TheoBenazz)"
+  ],
+  "keywords": [
+    "bim",
+    "photomesh",
+    "3d-tiles",
+    "viewer",
+    "javascript",
+    "cesium",
+    "ifc",
+    "lit",
+    "epfl",
+    "enac",
+    "cnpa",
+    "uzufly",
+    "vernets",
+    "geneva",
+    "exploratory",
+    "showcase"
+  ],
+  "scripts": {
+    "clean": "rm -rf dist .parcel-cache",
+    "start": "parcel",
+    "build": "parcel build",
+    "prebuild": "npm run clean && mkdir dist",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepublishOnly": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/uzufly/ifc-cesium-showcase.git"
+  },
+  "bugs": {
+    "url": "https://github.com/uzufly/ifc-cesium-showcase/issues"
+  },
+  "homepage": "https://github.com/uzufly/ifc-cesium-showcase/#readme",
+  "dependencies": {
+    "@uzufly/cesium-ifc-viewer": "latest"
+  },
+  "devDependencies": {
+    "@parcel/transformer-inline-string": "^2.8.3",
+    "parcel": "latest",
+    "parcel-reporter-static-files-copy": "latest",
+    "sharp": "^0.31.3"
+  },
+  "browser": {
+    "assert": false,
+    "buffer": false,
+    "crypto": false,
+    "fs": false,
+    "http": false,
+    "https": false,
+    "path": false,
+    "process": false,
+    "querystring": false,
+    "stream": false,
+    "url": false,
+    "util": false,
+    "zlib": false
+  },
+  "files": [
+    "dist",
+    "src"
+  ],
+  "//": "note the *.wasm entries should come last, otherwise the plugin complains about `dist/static/` dir missing",
+  "staticFiles": [
+    {
+      "staticOutPath": "static/Assets",
+      "staticPath": "node_modules/cesium/Build/Cesium/Assets"
+    },
+    {
+      "staticOutPath": "static/ThirdParty",
+      "staticPath": "node_modules/cesium/Build/Cesium/ThirdParty"
+    },
+    {
+      "staticOutPath": "static/Widgets",
+      "staticPath": "node_modules/cesium/Build/Cesium/Widgets"
+    },
+    {
+      "staticOutPath": "static/Workers",
+      "staticPath": "node_modules/cesium/Build/Cesium/Workers"
+    },
+    {
+      "staticOutPath": "static",
+      "staticPath": "node_modules/web-ifc/web-ifc.wasm"
+    },
+    {
+      "staticOutPath": "static",
+      "staticPath": "node_modules/web-ifc/web-ifc-mt.wasm"
+    }
+  ]
+}
