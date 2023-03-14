@@ -2,9 +2,7 @@
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/12a9eb3e-507d-47e9-b2e6-02fe9fcd5430/deploy-status)](https://app.netlify.com/sites/showcase-cesium-ifc/deploys)
 
-
 Showcases the import of a BIM IFC model onto a Cesium 3D photorealistic environment — the neighborhood of the [‹Caserne des Vernets›](https://goo.gl/maps/85u1oCvbX7NPKHAz8) construction site, in Praille-Acacias-Vernets / Geneva.
-
 
 <img src="src/assets/img/screencopy.png" height="450" alt="‹Cesium/IFC Showcase› webapp · screencopy">
 
@@ -24,8 +22,16 @@ npm install
 
 ## Dev
 
+To start a development server, watching, building and hot-reloading continuously:
+
 ```shell
 npm start
+```
+
+To build and bundle the sources (output in `dist/` subfolder):
+
+```shell
+npm run build
 ```
 
 ## License
