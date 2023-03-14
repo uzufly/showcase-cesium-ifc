@@ -34,10 +34,10 @@
     "showcase"
   ],
   "scripts": {
-    "clean": "rm -rf dist .parcel-cache",
+    "clean": "npx del dist .parcel-cache",
     "start": "parcel",
     "build": "parcel build",
-    "prebuild": "npm run clean && mkdir dist",
+    "prebuild": "npm run clean && npx make-dir dist",
     "test": "echo \"Error: no test specified\" && exit 1",
     "prepublishOnly": "npm run build"
   },
@@ -56,7 +56,9 @@
     "@parcel/transformer-inline-string": "latest",
     "parcel": "latest",
     "parcel-reporter-static-files-copy": "latest",
-    "sharp": "latest"
+    "sharp": "latest",
+    "del-cli": "^5.0.0",
+    "make-dir-cli": "^3.0.0"
   },
   "browser": {
     "assert": false,
