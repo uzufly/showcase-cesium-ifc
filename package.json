@@ -1,6 +1,6 @@
 {
   "name": "@uzufly/cesium-ifc-showcase",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Showcase of the import and viewing of an IFC BIM model within a Cesium 3D photorealistic environment – with a photomesh of ‹Caserne des Vernets› construction site in Geneva, Switzerland.",
   "source": "src/index.html",
   "author": "Uzufly sàrl (https://github.com/uzufly)",
@@ -13,7 +13,7 @@
     "Olivier Lange (https://github.com/olange)",
     "Romain Kirchhoff (https://github.com/uzuro)",
     "Théo Gerritsen (https://github.com/theogerritsen)",
-    "Théo Benazzi (https://github.com/TheoBenazz)"
+    "Théo Benazzi (https://github.com/tbenazzi)"
   ],
   "keywords": [
     "bim",
@@ -34,7 +34,7 @@
     "showcase"
   ],
   "scripts": {
-    "clean": "npx del dist .parcel-cache",
+    "clean": "npx del --force dist .parcel-cache",
     "start": "parcel",
     "build": "parcel build",
     "prebuild": "npm run clean && npx make-dir dist",
