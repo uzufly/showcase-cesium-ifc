@@ -36,7 +36,7 @@
   "scripts": {
     "clean": "npx del --force dist .parcel-cache",
     "start": "parcel",
-    "build": "parcel build",
+    "build": "parcel build --public-url ./",
     "prebuild": "npm run clean && npx make-dir dist",
     "test": "echo \"Error: no test specified\" && exit 1",
     "prepublishOnly": "npm run build"
