@@ -1,6 +1,6 @@
 # EPFL/CNPA · UE BIM · Cesium/IFC Showcase
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/12a9eb3e-507d-47e9-b2e6-02fe9fcd5430/deploy-status)](https://app.netlify.com/sites/showcase-cesium-ifc/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/12a9eb3e-507d-47e9-b2e6-02fe9fcd5430/deploy-status)](https://app.netlify.com/sites/showcase-cesium-ifc/deploys) [![Build and deploy to Pages](https://github.com/uzufly/showcase-cesium-ifc/actions/workflows/pages.yml/badge.svg)](https://github.com/uzufly/showcase-cesium-ifc/actions/workflows/pages.yml)
 
 Showcases the import of a BIM IFC model onto a Cesium 3D photorealistic environment — the neighborhood of the [‹Caserne des Vernets›](https://goo.gl/maps/85u1oCvbX7NPKHAz8) construction site, in Praille-Acacias-Vernets / Geneva.
 
