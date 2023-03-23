@@ -14,13 +14,13 @@ Uzufly flew its drone over the area in 02.2023 and assembled the pictures in a [
 
 Built with [IFC.js](https://github.com/IFCjs), [Lit.dev](https://lit.dev/) and the [Cesium.js](https://cesium.com/platform/cesiumjs/) 3D geospatial visualization platform.
 
-## Setup
+## Installation
 
 ```shell
 npm install
 ```
 
-## Dev
+## Usage
 
 To start a development server, watching, building and hot-reloading continuously:
 
@@ -36,5 +36,4 @@ npm run build
 
 ## License
 
-Copyright 2023 Uzufly SÀRL  
-Licensed under the [Apache License, Version 2.0](LICENSE).
+Distributed under the Apache-2.0 license. See LICENSE for details.

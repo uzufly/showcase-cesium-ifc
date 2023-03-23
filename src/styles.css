@@ -1,7 +1,18 @@
-*, ::after, ::before { box-sizing: border-box; }
-html, body { margin: 0; height: 100%; }
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
 
-body { font-family: system-ui; }
+html,
+body {
+  margin: 0;
+  height: 100%;
+}
+
+body {
+  font-family: system-ui;
+}
 
 :root {
   --margin-left: 1.5rem;
@@ -16,14 +27,17 @@ main {
 
 header,
 footer {
-  display: flex; align-items: center;
+  display: flex;
+  align-items: center;
   column-gap: var(--margin-left);
 }
 
 header {
-  position: absolute; z-index: 1;
-  top: 0.25rem; left: 0.25rem;
-  width: calc( 100% - 0.5rem);
+  position: absolute;
+  z-index: 1;
+  top: 0.25rem;
+  left: 0.25rem;
+  width: calc(100% - 0.5rem);
   padding: 0 var(--margin-left);
   height: 5rem;
 }
@@ -38,9 +52,12 @@ header #logo-epfl {
 }
 
 footer {
-  position: absolute; z-index: 1;
-  bottom: 0.25rem; left: 0.25rem;
-  padding: 0.5rem var(--margin-left); margin: 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 0.25rem;
+  left: 0.25rem;
+  padding: 0.5rem var(--margin-left);
+  margin: 0;
   width: calc(100% - 0.5rem);
 }
 
@@ -58,7 +75,7 @@ footer #logo-github {
 }
 
 .glassy {
-  background: rgba(255,255,255,0.8);
+  background: rgba(255, 255, 255, 0.8);
 }
 
 @supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
@@ -68,7 +85,8 @@ footer #logo-github {
   }
 }
 
-h1, p {
+h1,
+p {
   margin-block-start: 0;
   margin-block-end: 0.5rem;
 }
@@ -89,14 +107,15 @@ a:hover {
 }
 
 cesium-ifc-viewer {
-  background-color:white;
+  background-color: white;
   border: white solid 0.25rem;
   height: 100%;
 }
 
 cesium-ifc-viewer::part(slotted),
 cesium-ifc-viewer::part(msg) {
-  position: absolute; z-index: 1;
+  position: absolute;
+  z-index: 1;
 }
 
 cesium-ifc-viewer::part(slotted) {
