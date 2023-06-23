@@ -6,6 +6,8 @@ Showcases the import of a BIM IFC model onto a Cesium 3D photorealistic environm
 
 <img src="src/assets/img/screencopy.png" height="450" alt="‹Cesium/IFC Showcase› webapp · screencopy">
 
+Download a [sample IFC model](data/UE22-Base_MN_1111-LR-Existant.ifc) (88MB) and drag & drop it on the web app. Model will be automatically positioned at a (currently) fixed position.
+
 ## Credits
 
 A partnership research project of [EPFL/ENAC-CNAC](https://www.epfl.ch/labs/cnpa/fr/) and [Uzufly](https://uzufly.com/), Lausanne / Switzerland.
@@ -13,6 +15,8 @@ A partnership research project of [EPFL/ENAC-CNAC](https://www.epfl.ch/labs/cnpa
 Uzufly flew its drone over the area in 02.2023 and assembled the pictures in a [3D Tileset](https://cesium.com/why-cesium/3d-tiles/).
 
 Built with [IFC.js](https://github.com/IFCjs), [Lit.dev](https://lit.dev/) and the [Cesium.js](https://cesium.com/platform/cesiumjs/) 3D geospatial visualization platform.
+
+[Sample IFC model](data/UE22-Base_MN_1111-LR-Existant.ifc) courtesy of EPFL/ENAC-CNAC.
 
 ## Installation
 
