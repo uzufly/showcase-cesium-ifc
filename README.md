@@ -4,7 +4,8 @@
 
 Showcases the import of a BIM IFC model onto a Cesium 3D photorealistic environment — the neighborhood of the [‹Caserne des Vernets›](https://goo.gl/maps/85u1oCvbX7NPKHAz8) construction site, in Praille-Acacias-Vernets / Geneva.
 
-<img src="src/assets/img/screencopy.png" height="450" alt="‹Cesium/IFC Showcase› webapp · screencopy">
+<img src="src/assets/img/screencopy-01.png" height="450" alt="‹Cesium/IFC Showcase› webapp · with imported IFC model">
+<img src="src/assets/img/screencopy-02.png" height="450" alt="‹Cesium/IFC Showcase› webapp · with highlighted slab of the imported IFC model">
 
 Download a [sample IFC model](data/UE22-Base_MN_1111-LR-Existant.ifc) (88MB) and drag & drop it on the web app. Model will be automatically positioned at a (currently) fixed position.
 
