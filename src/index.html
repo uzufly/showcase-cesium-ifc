@@ -42,6 +42,7 @@
     </header>
     <main>
       <cesium-ifc-viewer
+        id="mainViewer"
         cesium-base-url="static/" ifc-base-url="../../static/"
         ion-access-token="eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJqdGkiOiI5Yjk5NGFkNi01ODM2LTRjZmMtODVjZS05ZGY2YTQ2Zjk2NGMiLCJpZCI6MzIzMDIsImlhdCI6MTY3ODExNDM1Nn0.WwZX9paasNbFvTo9U3KPZvJEEk1iDe3thjEPtg6nTJ0"
         model-origin="[ 6.137499506, 46.192506022, 425.999 ]"
@@ -62,7 +63,10 @@
                src="assets/img/github-mark.svg">
           Source code</a></div>
       <div id="credits">
-        <a href="#">Data attribution</a></div>
+        <cesium-ifc-viewer-data-attribution for="mainViewer">
+          <a slot="dialog-open" href="#">Data attribution</a>
+        </cesium-ifc-viewer-data-attribution>
+      </div>
     </footer>
     <script type="module">
       import '@uzufly/cesium-ifc-viewer';

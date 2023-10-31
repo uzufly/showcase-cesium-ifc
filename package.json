@@ -1,6 +1,6 @@
 {
   "name": "@uzufly/cesium-ifc-showcase",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "Showcase of the import and viewing of an IFC BIM model within a Cesium 3D photorealistic environment – with a photomesh of ‹Caserne des Vernets› construction site in Geneva, Switzerland.",
   "source": "src/index.html",
   "author": "Uzufly sàrl (https://github.com/uzufly)",
@@ -44,7 +44,7 @@
   },
   "homepage": "https://github.com/uzufly/ifc-cesium-showcase/#readme",
   "dependencies": {
-    "@uzufly/cesium-ifc-viewer": "^0.12.1"
+    "@uzufly/cesium-ifc-viewer": "^0.13.0"
   },
   "devDependencies": {
     "@parcel/transformer-inline-string": "^2.10.1",
@@ -53,6 +53,9 @@
     "parcel": "^2.10.1",
     "parcel-reporter-static-files-copy": "^1.5.3",
     "sharp": "^0.31.3"
+  },
+  "@parcel/resolver-default": {
+    "packageExports": true
   },
   "alias": {
     "assert": false,
