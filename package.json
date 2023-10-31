@@ -47,10 +47,10 @@
     "@uzufly/cesium-ifc-viewer": "^0.12"
   },
   "devDependencies": {
-    "@parcel/transformer-inline-string": "^2.10.0",
+    "@parcel/transformer-inline-string": "^2.10.1",
     "del-cli": "^5.0.0",
     "make-dir-cli": "^3.0.0",
-    "parcel": "^2.10",
+    "parcel": "^2.10.1",
     "parcel-reporter-static-files-copy": "^1.5.3",
     "sharp": "^0.31.3"
   },
