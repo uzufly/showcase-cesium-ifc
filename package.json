@@ -44,7 +44,7 @@
   },
   "homepage": "https://github.com/uzufly/ifc-cesium-showcase/#readme",
   "dependencies": {
-    "@uzufly/cesium-ifc-viewer": "^0.12"
+    "@uzufly/cesium-ifc-viewer": "^0.12.1"
   },
   "devDependencies": {
     "@parcel/transformer-inline-string": "^2.10.1",
