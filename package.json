@@ -52,7 +52,7 @@
     "make-dir-cli": "^3.0.0",
     "parcel": "^2.10.1",
     "parcel-reporter-static-files-copy": "^1.5.3",
-    "sharp": "^0.31.3"
+    "sharp": "^0.32.6"
   },
   "@parcel/resolver-default": {
     "packageExports": true
