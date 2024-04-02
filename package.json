@@ -1,6 +1,6 @@
 {
-  "name": "@uzufly/cesium-ifc-showcase",
   "version": "0.2.5",
+  "name": "@uzufly/cesium-ifc-showcase",
   "description": "Showcase of the import and viewing of an IFC BIM model within a Cesium 3D photorealistic environment – with a photomesh of ‹Caserne des Vernets› construction site in Geneva, Switzerland.",
   "source": "src/index.html",
   "author": "Uzufly sàrl (https://github.com/uzufly)",
@@ -8,6 +8,29 @@
   "publishConfig": {
     "access": "public",
     "registry": "https://npm.pkg.github.com"
+  },
+  "files": [
+    "dist",
+    "src"
+  ],
+  "scripts": {
+    "clean": "npx del --force dist .parcel-cache",
+    "start": "parcel",
+    "build": "parcel build --public-url ./",
+    "prebuild": "npm run clean && npx make-dir dist",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepublishOnly": "npm run build"
+  },
+  "dependencies": {
+    "@uzufly/cesium-ifc-viewer": "^0.13.1"
+  },
+  "devDependencies": {
+    "@parcel/transformer-inline-string": "^2.10.1",
+    "del-cli": "^5.0.0",
+    "make-dir-cli": "^3.0.0",
+    "parcel": "^2.10.1",
+    "parcel-reporter-static-files-copy": "^1.5.3",
+    "sharp": "^0.32.6"
   },
   "keywords": [
     "bim",
@@ -27,32 +50,13 @@
     "exploratory",
     "showcase"
   ],
-  "scripts": {
-    "clean": "npx del --force dist .parcel-cache",
-    "start": "parcel",
-    "build": "parcel build --public-url ./",
-    "prebuild": "npm run clean && npx make-dir dist",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "prepublishOnly": "npm run build"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/uzufly/ifc-cesium-showcase.git"
-  },
+  "homepage": "https://github.com/uzufly/ifc-cesium-showcase/#readme",
   "bugs": {
     "url": "https://github.com/uzufly/ifc-cesium-showcase/issues"
   },
-  "homepage": "https://github.com/uzufly/ifc-cesium-showcase/#readme",
-  "dependencies": {
-    "@uzufly/cesium-ifc-viewer": "^0.13.1"
-  },
-  "devDependencies": {
-    "@parcel/transformer-inline-string": "^2.10.1",
-    "del-cli": "^5.0.0",
-    "make-dir-cli": "^3.0.0",
-    "parcel": "^2.10.1",
-    "parcel-reporter-static-files-copy": "^1.5.3",
-    "sharp": "^0.32.6"
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/uzufly/ifc-cesium-showcase.git"
   },
   "@parcel/resolver-default": {
     "packageExports": true
@@ -72,10 +76,6 @@
     "util": false,
     "zlib": false
   },
-  "files": [
-    "dist",
-    "src"
-  ],
   "//": "note the *.wasm entries should come last, otherwise the plugin complains about `dist/static/` dir missing",
   "staticFiles": [
     {
